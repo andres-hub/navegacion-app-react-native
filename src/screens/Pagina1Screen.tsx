@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { Button, Text, TouchableOpacity, View } from 'react-native'
 import {StackScreenProps} from '@react-navigation/stack'
 import { styles } from '../theme/appTheme';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 interface Props extends StackScreenProps<any, any>{}
 
@@ -26,7 +27,10 @@ export const Pagina1Screen = ( {navigation}: Props) => {
             nombre: 'Pedro'
           })}
           >
-            <Text style={styles.bottonGrandeTexto}>Pedro</Text>
+            <Text style={styles.bottonGrandeTexto}>
+              <Icon name='person-circle-outline' size={30} />
+              Pedro
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity style={{
             ...styles.botonGrande,
@@ -37,7 +41,10 @@ export const Pagina1Screen = ( {navigation}: Props) => {
             nombre: 'Maria'
           })}
           >
-            <Text style={styles.bottonGrandeTexto}>Maria</Text>
+            <Text style={styles.bottonGrandeTexto}>
+              Maria
+              <Icon name='person-outline' size={25} />
+            </Text>
           </TouchableOpacity>
         </View>
     </View>
