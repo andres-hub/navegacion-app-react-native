@@ -1,10 +1,9 @@
 import 'react-native-gesture-handler';
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Button, Text, TouchableOpacity, View } from 'react-native'
 import {StackScreenProps} from '@react-navigation/stack'
 import { styles } from '../theme/appTheme';
 import Icon from 'react-native-vector-icons/Ionicons';
-
 interface Props extends StackScreenProps<any, any>{}
 
 export const Pagina1Screen = ( {navigation}: Props) => {
